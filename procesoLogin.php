@@ -33,7 +33,7 @@ if (isset($_POST["btnEnviar"])) {
                 //echo $_SESSION["login"]["usuario"] . " " . $_SESSION["login"]["tipo_usuario"];
             }
         } else {
-            header("Location:login.php?mensaje='Usuario no Existe'");
+            header("Location:login.php?mensaje='Usuario no Existen'");
         }
     
 } else {
