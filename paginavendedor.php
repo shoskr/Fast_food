@@ -9,17 +9,22 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        
+
+
         <style>
             .bajar{
                 margin: 50px 80px;   
             }
-            
-            
-        </style>
-    </head>
-    <body style="background-image: url(img/Logo_1.png)">
 
+
+        </style>
+
+    </head>
+    <body style="background-color: black">
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        
+        
         <div class="row bajar"   >
             <div class="panel-default">
                 <div class="col-md-offset-2 col-md-8">

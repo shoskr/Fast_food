@@ -24,7 +24,7 @@ if (isset($_POST["btnEnviar"])) {
                 $_SESSION["login"]["tipo_usuario"] = $row[3];
 
                 if ($_SESSION["login"]["tipo_usuario"] == 2) {
-                    header('Location: index.php');
+                    header('Location:paginavendedor.php');
                     //echo "<div class='alert alert-primary'>Bienvenido ".$_SESSION["login"]["usuario"]."</div>";
                 } elseif ($_SESSION["login"]["tipo_usuario"] == 1) {
                     header('Location: index.php');
