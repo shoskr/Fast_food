@@ -20,11 +20,13 @@ if (isset($_POST["btnEnviar"])) {
 
         if ($respuestaFilas > 0) {
             while ($row = mysqli_fetch_array($resultado)) {
+               
                 $_SESSION["login"]["usuario"] = $row[1];
                 $_SESSION["login"]["tipo_usuario"] = $row[3];
+                $_SESSION["login"]["id"] = $row[0];
 
                 if ($_SESSION["login"]["tipo_usuario"] == 2) {
-                    header('Location:paginavendedor.php');
+                    header('Location:paginavendedor.php?id="$_SESSION["login"]["id"]"?nombre="$_SESSION["login"]["usuario"]"');
                     //echo "<div class='alert alert-primary'>Bienvenido ".$_SESSION["login"]["usuario"]."</div>";
                 } elseif ($_SESSION["login"]["tipo_usuario"] == 1) {
                     header('Location: index.php');

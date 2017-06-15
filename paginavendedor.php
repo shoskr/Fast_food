@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+/*session_start();
+$_SESSION["login"]["usuario"];
+if (isset($_SESSION["login"]["usuario"])) {
+    echo '<p><font size="4" face="font_family" color="red"> Usuario: ' . $_SESSION["login"]["usuario"] . '</font></p>';
+} else {
+
+    header("location:login.php");
+}*/
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -23,8 +27,8 @@ and open the template in the editor.
     <body style="background-color: black">
 
         <script src="js/jquery-3.2.0.min.js"></script>
-        
-        
+
+
         <div class="row bajar"   >
             <div class="panel-default">
                 <div class="col-md-offset-2 col-md-8">

@@ -86,11 +86,11 @@ if (isset($_GET["mensaje"])) {
                                 <form method="POST" action="procesoLogin.php" id="formulario">
                                     <div class="form-group">
                                         <label for="txtUser">Usuario:</label>
-                                        <input type="text" class="form-control" name="txtUser" id="txtUser" placeholder="Ej: Pavel">
+                                        <input type="text"  name="txtUser" id="txtUser" placeholder="Ej: Pavel">
                                     </div>
                                     <div class="form-group">
                                         <label for="txtPass">Contraseña:</label>
-                                        <input type="password" class="form-control" id="txtPass" name="txtPass" placeholder="Ej: ********* ">
+                                        <input type="password" id="txtPass" name="txtPass" placeholder="Ej: ********* ">
                                     </div>
                                     <center>
                                         <input type="submit" name="btnEnviar" id="btnEnviar" value="Ingresar" class="btn btn-primary">
