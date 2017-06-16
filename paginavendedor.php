@@ -7,6 +7,8 @@ if (isset($_SESSION["login"]["usuario"])) {
 
     header("location:login.php");
 }*/
+
+
 ?>
 <html>
     <head>
@@ -42,8 +44,8 @@ if (isset($_SESSION["login"]["usuario"])) {
                             <ul class="nav nav-tabs" style="text-align: center">
                                 <li><a href="paginavendedor.php">Home</a></li>
                                 <li><a href="venta.php"><fon>Venta</fon></a></li>
-                                <li><a href="#"><fon>Estado Pedido</fon></a></li>
-                                <li><a href="#"><fon>Entrega Pedidos</fon></a></li>
+                                <li><a href="mostrarpedidos.php"><fon>Estado Pedido</fon></a></li>
+                                <li><a href="entregapedido.php"><fon>Entrega Pedidos</fon></a></li>
                             </ul>
                         </div>
                     </nav>

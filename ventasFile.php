@@ -11,7 +11,7 @@ $nombre=2;
 
 if (isset($_POST["txtRegistro"])) {
     
-  
+  date_default_timezone_set('America/Santiago');
     
     $conexion = new mysqli("localhost", "root", "", "fast_food");
 
@@ -57,7 +57,7 @@ if (isset($_POST["txtRegistro"])) {
         }
 
 
-        $sql = $conexion->query("INSERT INTO detalle_venta VALUES(null,$cantidad,0,0,$produc,$venta);");
+        $sql = $conexion->query("INSERT INTO detalle_venta VALUES(null,$cantidad,0,0,$produc,$venta,0);");
 
 
         if ($sql > 0) {
